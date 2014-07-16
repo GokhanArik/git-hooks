@@ -36,3 +36,8 @@ Level 2 - Aborts commit if any Warning exists.
 Level 3 - Aborts commit if any Error or Warning exists.
 
 The script is set to Level 3 by default.
+
+Screenshot
+==========
+
+![alt tag](screenshot.png)
