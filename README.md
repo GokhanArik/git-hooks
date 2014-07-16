@@ -30,7 +30,9 @@ Levels
 There are 3 levels in the script.
 
 Level 1 - Aborts commit if any Error exists.
+
 Level 2 - Aborts commit if any Warning exists.
+
 Level 3 - Aborts commit if any Error or Warning exists.
 
 The script is set to Level 3 by default.
