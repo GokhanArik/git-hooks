@@ -31,7 +31,7 @@ require 'nokogiri'
 #       2 Any Warning exists.
 #       3 Any Error or Warning exists.
   
-@inspection_level = 3 # Level 1 by default
+@inspection_level = 3 # Level 3 by default
 
 ##################
 # Helper Methods #
@@ -103,15 +103,15 @@ else
 end
 
 ##########################
-# Find IntelliJ App Path # 
+# Find IntelliJ IDEA Path # 
 ##########################
 
 if Dir["/Applications/IntelliJ*"] != nil
     @ide_path = Dir["/Applications/IntelliJ*"][0]
     puts "App Path \t: #{@ide_path}"
 else
-    puts "Intellij IDEA cannot be found in 'Applications' folder. Please enter full path to application directory: "
-    @ide_path = $stdin.gets
+    puts "Intellij IDEA cannot be found in 'Applications' folder."
+        exit 1
 end
 
 @ide_path = @ide_path.gsub /\s+/, '\ '
